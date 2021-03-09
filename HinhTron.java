@@ -4,7 +4,7 @@ package edu.mta.demo.ex1;
 import static java.lang.Math.pow;
 
 public class HinhTron {
-    public float bk;
+    private float bk;
 
     public HinhTron(float bk) {
         this.bk = bk;
@@ -21,9 +21,9 @@ public class HinhTron {
         this.bk = bk;
     }
     
-    public float dt()
+    public double dt()
     {
-        return (float) (3.14*pow(getBk(),2));
+        return  3.14*pow(getBk(),2);
     }
     @Override
     public String toString()
